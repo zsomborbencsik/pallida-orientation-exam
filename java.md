@@ -11,7 +11,7 @@
  - You should display a simple form to query a database, _don't waste time with design_
     - Create an input field in which the user can enter a licence plate, like `HMZ-140`
     - Create a button with the text `Query database`
-        - Clicking on the button should send a post request to the backend
+        - Clicking on the button should send a `get` request to the backend
         - The frontend should display the results from the DB.
     - Add two radio boxes (_since it doesn't make sense to combine them_):
         - Police cars only. Filter for cars only starting with the `RB` prefix
