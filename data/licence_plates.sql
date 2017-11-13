@@ -71,7 +71,7 @@ insert into licence_plates (plate, car_make, car_model, color, year) values ('PJ
 insert into licence_plates (plate, car_make, car_model, color, year) values ('CICA-93', 'Mitsubishi', 'Diamante', 'Yellow', 2001);
 insert into licence_plates (plate, car_make, car_model, color, year) values ('HUE-911', 'Porsche', '911', 'Red', 1996);
 insert into licence_plates (plate, car_make, car_model, color, year) values ('ARP-034', 'Infiniti', 'G35', 'Purple', 2004);
-insert into licence_plates (plate, car_make, car_model, color, year) values ('BELGA-11', 'Volkswagen', 'GOLF III', 'Violet', 1993);
+insert into licence_plates (plate, car_make, car_model, color, year) values ('BELGA-1', 'Volkswagen', 'GOLF III', 'Violet', 1993);
 insert into licence_plates (plate, car_make, car_model, color, year) values ('MAV-166', 'Dodge', 'Ramcharger', 'Turquoise', 1992);
 insert into licence_plates (plate, car_make, car_model, color, year) values ('PFG-476', 'Chevrolet', 'Astro', 'Aquamarine', 2005);
 insert into licence_plates (plate, car_make, car_model, color, year) values ('CMB-359', 'GMC', 'Sierra 3500', 'Blue', 2004);
