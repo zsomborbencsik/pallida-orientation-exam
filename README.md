@@ -27,7 +27,7 @@ Detailed info is in the language specific description.
 
 All classes should import the the following database:
 
-[licence_plate.sql](data/licence_plate.sql)
+[licence_plate.sql](data/licence_plates.sql)
 
 CREATE A SCREENSHOT OF THE DATABASE YOU IMPORTED AND COMMIT IT TO THE REPO
 
