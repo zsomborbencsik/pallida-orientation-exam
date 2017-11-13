@@ -39,9 +39,10 @@
 ### Validation
 
 You should validate all input submitted by the user! 
-
  - Only allow alphanumeric characters from the user: `[A-Z]`, `[0-9]` and the `-` dash symbol
- - Maximum length of the quers is 7 characters
+
+For the licence plate lookup only:
+ - Maximum length of the query is 7 characters
 
 If the submitted data doesn't match any above criteria, respond with the following JSON:
 
