@@ -2,17 +2,16 @@
 # JavaScript focus
 
 ## 0. Initialize an NPM package in this folder
- - the test command should be `node test.js`
- - create `.gitignore` file for `node_modules`
+ - create `.gitignore` file for `node_modules` directory
  - save your dependencies to the `package.json` file
 
 ## 1. Frontend
 
 ### The form
- - You should display a simple form to query a database, don't waste time with design
+ - You should display a simple form to query a database, _don't waste time with design_
     - Create an input field in which the user can enter a licence plate, like `HMZ-140`
     - Create a button with the text `Query database`
-        - Clicking on the button should starts an AJAX call to the backend
+        - Clicking on the button should start an AJAX call to the backend
         - The frontend should display the results from the DB.
     - Add two radio boxes (_since it doesn't make sense to combine them_):
         - Police cars only. Filter for cars only starting with the `RB` prefix
@@ -62,7 +61,7 @@ Example query:
 `http://localhost:8080/search?q=HMZ-140&police=1`
 
  - use the `police` parameter to filter for police cars
- - use the `diplomat` parameter to filter for diplimat cars
+ - use the `diplomat` parameter to filter for diplomat cars
 
 #### GET `/search/:make`
 

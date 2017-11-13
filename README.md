@@ -10,7 +10,7 @@ You will have to create a licence plate search web application.
  - The backend validates if the licence plate is valid query
  - You have to create two endpoints
 
-More info in the language specific 
+Detailed info is in the language specific description.
 
 ## Getting Started
  - Fork this repository under your own account
