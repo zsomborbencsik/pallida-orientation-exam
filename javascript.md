@@ -22,13 +22,13 @@
  - Display the results from the backend in a HTML `<table>` the following format for the query `HMZ`
 
 ```
-| Licence plate | Make   | Model | Color | Year |
+| Licence plate | Brand   | Model | Color | Year |
 | HMZ-140       | [Audi] | A8    | red   | 2016 |
 | HMZ-555       | [BMW]  | Z4    | pink  | 2011 |
 ```
 
  - The app can display one or multiple rows of results since it should match partial queries as well
- - Clicking on the `Make` field should restart the search and display all cars with the same type
+ - Clicking on the `Brand` field should restart the search and display all cars with the same type
     - So clicking on "Audi" should restart the search and list all cars from the database regardless of the original query that resulted with this list
  - If the user submits an invalid licence plate, like `HMZ-@#5` then display an error message instead of the table
     - This happens when the response JSON from the server has the `result` property set to `error`
@@ -63,9 +63,9 @@ Example query:
  - use the `police` parameter to filter for police cars
  - use the `diplomat` parameter to filter for diplomat cars
 
-#### GET `/search/:make`
+#### GET `/search/:brand`
 
-This endpoint should return all the cars with the provided make in query parameter
+This endpoint should return all the cars with the provided brand in query parameter
 
 Example query:
 
@@ -81,14 +81,14 @@ Both endpoint should return the same data structure:
     "data": [
         {
             licence: 'HMZ-140',
-            make: 'Audi',
+            brand: 'Audi',
             model: 'A8',
             year: 2016,
             color: 'red'
         },
         {
             licence: 'HMZ-555',
-            make: 'BMZ',
+            brand: 'BMZ',
             model: 'Z4',
             year: 2011,
             color: 'pink'
