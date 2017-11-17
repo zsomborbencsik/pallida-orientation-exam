@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h1>Enter Username</h1>
+
+<p><a th:href="@{/filterPoliceCars}">Add new topic</a></p>
+<p><a th:href="@{/filterDiplomatCars}">Add new topic</a></p>
+
+<form th:action="@{/search}" method="get">
+    <input type="userinput" th:name="userinput" />
+    <button type="submit" value="Submit">Search</button>
+    <p th:text="${carplate}" ></p>
+</form>
+
+<div th:if="${searchedPlate!= null}"><p th:text="${searchedPlate}"></p></div>
+
+<th:block th:each="plate : ${database}">
+    <tr>
+        <ul>
+            <li>
+                <td th:text="${plate.plate}">...</td>
+            </li>
+            <li>
+                <td th:text="${plate.car_brand}">...</td>
+            </li>
+            <li>
+                <td th:text="${plate.CarModel}">...</td>
+            </li>
+            <li>
+                <td th:text="${plate.color}">...</td>
+            </li>
+            <li>
+                <td th:text="${plate.year}">...</td>
+            </li>
+        </ul>
+    </tr>
+</th:block>
+
+
+
+</body>
+</html>
